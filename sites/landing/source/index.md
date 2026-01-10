@@ -4,8 +4,8 @@ Welcome to the monorepo landing site. Choose a project below.
 
 ## Projects
 
-- [Site A](site-a/) - sample docs with getting started content.
-- [Site B](site-b/) - sample docs with reusable patterns.
+- <a href="./site-a/">Site A</a> - sample docs with getting started content.
+- <a href="./site-b/">Site B</a> - sample docs with reusable patterns.
 
 ## Build notes
 
