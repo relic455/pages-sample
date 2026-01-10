@@ -6,9 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "temp"
-copyright = "2026, anonymous"
-author = "anonymous"
+project = "site-a"
+copyright = "2026, pages-sample"
+author = "pages-sample"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
