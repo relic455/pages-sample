@@ -13,10 +13,11 @@ author = "pages-sample"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ["myst_parser"]
 
 templates_path = ["_templates"]
 exclude_patterns = []
+source_suffix = {".md": "markdown"}
 
 language = "ja"
 
