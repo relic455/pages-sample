@@ -37,15 +37,18 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build static content
         run: |
+          uv run make -C sites/landing html
           uv run make -C sites/site-a html
           uv run make -C sites/site-b html
-          mkdir build
-          mv sites/site-a/build/html build/site-a
-          mv sites/site-b/build/html build/site-b
+          rm -rf build
+          mkdir -p build/site-a build/site-b
+          cp -R sites/landing/build/html/. build/
+          cp -R sites/site-a/build/html/. build/site-a/
+          cp -R sites/site-b/build/html/. build/site-b/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          # Upload entire repository
+          # Upload staged Pages output
           path: 'build/'
       - name: Deploy to GitHub Pages
         id: deployment
