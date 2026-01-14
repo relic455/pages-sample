@@ -13,13 +13,18 @@ author = "pages-sample"
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["myst_parser"]
+import sys
+from pathlib import Path
+
+extensions = ["myst_parser", "sphinx.ext.autodoc"]
 
 templates_path = ["_templates"]
 exclude_patterns = []
 source_suffix = {".md": "markdown"}
 
 language = "ja"
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "src"))
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output

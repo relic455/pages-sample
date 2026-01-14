@@ -15,4 +15,5 @@ This site includes a few simple pages that show common Sphinx patterns.
 getting-started
 usage
 faq
+python-sample
 ```
