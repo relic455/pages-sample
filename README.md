@@ -2,15 +2,13 @@
 
 This repo now contains three Sphinx projects.
 
-Projects
---------
+## Projects
 
 - `sites/landing`: landing site (root for Pages)
 - `sites/site-a`: original site
 - `sites/site-b`: second sample site
 
-Build locally
--------------
+## Build locally
 
 ```console
 uv run make -C sites/landing html
@@ -18,8 +16,7 @@ uv run make -C sites/site-a html
 uv run make -C sites/site-b html
 ```
 
-Autodoc example
----------------
+## Autodoc example
 
 Example `conf.py` fragment:
 
